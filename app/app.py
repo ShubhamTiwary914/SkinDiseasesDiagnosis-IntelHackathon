@@ -3,15 +3,28 @@ from PIL import Image
 import tensorflow as tf
 import numpy as np
 
+# Define the classes and lesion type dictionary
+classes = ["nv", "mel", "bkl", "bcc", "akiec", "vasc", "df"]
+
+lesion_type_dict = {
+    'nv': 'Melanocytic nevi',
+    'mel': 'Melanoma',
+    'bkl': 'Benign keratosis-like lesions',
+    'bcc': 'Basal cell carcinoma',
+    'akiec': 'Actinic keratoses',
+    'vasc': 'Vascular lesions',
+    'df': 'Dermatofibroma'
+}
+
 # Load the three models
 model_files = [
-    r"model/Skin Cancer Models/model1.h5",
-    r"model/Skin Cancer Models/model2.h5",
-    r"model/Skin Cancer Models/model3.h5",
+    "../model/Skin Cancer Models/model1.h5",
+    "../model/Skin Cancer Models/model2.h5",
+    "../model/Skin Cancer Models/model3.h5",
 ]
-models = []
-for file in model_files:
-    models.append(tf.keras.models.load_model(file, compile=False))
+# models = []
+# for file in model_files:
+#     models.append(tf.keras.models.load_model(file, compile=False))
 
 # Set the title of the app
 st.title("Skin Cancer Classification and Chatbot")
