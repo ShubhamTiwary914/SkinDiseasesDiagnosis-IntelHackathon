@@ -44,7 +44,7 @@ labels = [
 
 
 def makePrediction(imageList: list, model):
-    imageNP = np.array(imageList)
+    imageNP = np.array(imageList, dtype=np.uint8)
     imageBGR = cv2.cvtColor(imageNP, cv2.COLOR_RGB2BGR)
     imageResized = cv2.resize(imageBGR,(180,180))
     inputX = np.expand_dims(imageResized, axis=0)

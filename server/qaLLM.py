@@ -30,7 +30,7 @@ def loadTransformers():
         model_type="llama",
         config={
             'max_new_tokens':512,
-            'temperature':0.55,
+            'temperature':0,
             'context_length': 4096
         }
 
