@@ -18,9 +18,9 @@ lesion_type_dict = {
 
 # Load the three models
 model_files = [
-    "../model/Skin Cancer Models/model1.h5",
-    "../model/Skin Cancer Models/model2.h5",
-    "../model/Skin Cancer Models/model3.h5",
+    "../model/Skin/skin_model1.h5",
+    "../model/Skin/skin_model2.h5",
+    "../model/Skin/skin_model3.h5",
 ]
 # models = []
 # for file in model_files:
