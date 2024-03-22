@@ -20,7 +20,8 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 ## Breaking Down the Components
 
 > [!IMPORTANT]
-> The CNN and LLM Models are hosted on top Intel VMs via a Backend Server(`FastAPI`) and linked with Client Side(`Streamlit`) using Port Forwarding (`NGROK`), accessible with `Requests` library
+> The CNN and LLM Models are hosted on top Intel VMs via a Backend Server(`FastAPI`) and linked with Client Side(`Streamlit`) using Port Forwarding (`NGROK`), accessible with `Requests` 
+>> To Check out in detail the Server Side Components: [Server Side Documentations](https://github.com/ShubhamTiwary914/SkinDiseasesDiagnosis-IntelHackathon/tree/main/server#hosted-on-intel-xeon-processor-vm-instance-on-a-python-fastapi-web-serverrunning-on-vms-localhost-with-ngrokport-forward-for-web-server)
 
 <h4>1. Image Classification CNN Model</h3>
 
@@ -69,6 +70,10 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 
 ## Running the Application 
 
+> For Setting up your own Server Side Component for this project in Intel Xeon Processor VM:  [Server Side Setup Documentations](https://github.com/ShubhamTiwary914/SkinDiseasesDiagnosis-IntelHackathon/tree/main/server#hosted-on-intel-xeon-processor-vm-instance-on-a-python-fastapi-web-serverrunning-on-vms-localhost-with-ngrokport-forward-for-web-server)
+
+<br /><br />
+
 
 1. Clone the Repository
 ```
@@ -91,6 +96,7 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 ```
   streamlit run client.py
 ```
+
 
 
 > [!NOTE]
