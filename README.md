@@ -20,7 +20,7 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 ## Breaking Down the Components
 
 > [!IMPORTANT]
-> The CNN and LLM Models are hosted on top Intel VMs via a Backend Server(Flask) and linked with Client Side using Port Forwarding (NGROK)
+> The CNN and LLM Models are hosted on top Intel VMs via a Backend Server(`FastAPI`) and linked with Client Side(`Streamlit`) using Port Forwarding (`NGROK`), accessible with `Requests` library
 
 <h4>1. Image Classification CNN Model</h3>
 
