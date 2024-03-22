@@ -45,7 +45,10 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 
 ## Worflow Diagram
 
-![psworkflow](https://github.com/ShubhamTiwary914/skinDiseasesCNN-IIT/assets/67773966/478eee40-7314-48e5-b6d4-42f56b541ef2)
+![psflow (1)](https://github.com/ShubhamTiwary914/SkinDiseasesDiagnosis-IntelHackathon/assets/67773966/119bb549-5a86-4025-bc68-3c808414aa97)
+
+
+
 
 <br />
 
