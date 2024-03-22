@@ -22,7 +22,7 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 > [!IMPORTANT]
 > The CNN and LLM Models are hosted on top Intel VMs via a Backend Server(Flask) and linked with Client Side using Port Forwarding (NGROK)
 
-<h3>1. Image Classification CNN Model</h3>
+<h4>1. Image Classification CNN Model</h3>
 
  -  The CNN Model acts as a first step multi-label classification via open source Skin Diseases datasets.
  -  Trained on `Intel Developer Cloud (IDC)` provided Next Gen `Intel Xeon-based Premium CPUs` with oneAPI Toolkit such as:  `ITEX`:  Intel OneAPI Extensions for Tensorflow
@@ -30,15 +30,13 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 
 <br />
 
-<h3>2. LLM (RAG) based Symptom Checker & Recommendation </h3>
+<h4>2. LLM (RAG) based Symptom Checker & Recommendation </h3>
 
 - Further symptom checking process is passed on using a LLM Model that Processes Medical Books & Documents, Generating smart information on the suspected disease
 - Using Open Source `Meta/LLAMA-2(7B) Model` running on `4th Gen Intel Xeon VM`
 - Stores Contents from Books onto a VectorDB by Text Splitting + Storing the Vector Embeddings and then use a Retriever to Generate Responses from Queries
 
 
-
-<h3>2. LLM (RAG) based Symptom Checker & Recommendation </h3>
 
 
 
@@ -49,6 +47,21 @@ Therefore, this Solution aims to develop robust ML & LLMsmodels capable of accur
 
 ![psworkflow](https://github.com/ShubhamTiwary914/skinDiseasesCNN-IIT/assets/67773966/478eee40-7314-48e5-b6d4-42f56b541ef2)
 
+<br />
+
+
+## Tech Stacks, Tools and Frameworks
+
+ - `Streamlit` -> Interface
+ - `FastAPI + Ngrok on Intel VM` -> Backend
+ - `Tensorflow + ITEX on IDC` -> CNN Model (Deep Learning)
+ - `Ctransformers + ChromaDB + Langchain ` -> LLM 
+
+
+
+
+
+<br />
 
 
 ## Running the Application 
